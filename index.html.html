@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BrightMind Academy – Best Offline Coaching Classes for CBSE & MP Board | Class 1–12</title>
+<meta name="description" content="BrightMind Academy offers expert offline coaching for CBSE & MP Board students from Class 1–12. Expert faculty, small batches, personal attention. Book your free demo class today!">
+<meta name="keywords" content="best coaching classes near me, CBSE coaching, MP Board tuition, offline coaching classes, tuition classes for class 10, class 12 coaching, science coaching institute, maths tuition near me, biology coaching, chemistry tuition, physics coaching">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="BrightMind Academy – Top Coaching for Class 1–12">
+<meta property="og:description" content="Expert offline coaching for CBSE & MP Board. Small batches, experienced faculty, guaranteed results.">
+<meta property="og:type" content="website">
+
+<!-- Professional font pairing: Playfair Display (headings) + Plus Jakarta Sans (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "BrightMind Academy",
+  "description": "Offline coaching for CBSE and MP Board students Class 1-12",
+  "url": "https://brightmindacademy.in",
+  "telephone": "+91-9876543210",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123, Near City Center Mall",
+    "addressLocality": "Indore",
+    "addressRegion": "Madhya Pradesh",
+    "postalCode": "462001",
+    "addressCountry": "IN"
+  }
+}
+</script>
+
+<style>
+:root {
+  /* Core palette – navy stays, orange replaced with teal/green for CTAs */
+  --navy: #0a1628;
+  --navy-mid: #0d1f3c;
+  --navy-light: #122548;
+  --blue: #1a3a6b;
+
+  /* NEW: Green accent replaces orange for CTAs */
+  --green: #16a34a;
+  --green-hover: #15803d;
+  --green-light: #22c55e;
+  --green-glow: rgba(22,163,74,.35);
+
+  /* Kept for urgency bar / badges only */
+  --amber: #d97706;
+  --amber-light: #f59e0b;
+  --gold: #fbbf24;
+
+  --white: #ffffff;
+  --off-white: #f8fafc;
+  --gray: #94a3b8;
+  --gray-light: #e2e8f0;
+  --success: #22c55e;
+  --text-dark: #1e293b;
+  --text-mid: #475569;
+  --glass: rgba(255,255,255,0.06);
+  --glass-border: rgba(255,255,255,0.12);
+
+  /* Typography */
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+/* ── LOADER ── */
+#loader {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 16px;
+  transition: opacity .5s, visibility .5s;
+}
+#loader.hide { opacity: 0; visibility: hidden; }
+.loader-logo {
+  font-family: var(--font-display);
+  font-size: 2rem; font-weight: 800; color: var(--white);
+  letter-spacing: -0.01em;
+}
+.loader-logo span { color: var(--green-light); }
+.loader-bar { width: 200px; height: 3px; background: rgba(255,255,255,.15); border-radius: 99px; overflow: hidden; }
+.loader-fill { height: 100%; width: 0; background: linear-gradient(90deg,var(--green),var(--green-light)); border-radius: 99px; animation: fill 1.2s ease forwards; }
+@keyframes fill { to { width: 100%; } }
+
+/* ── URGENCY BANNER ── */
+/* Fixed: always below navbar on all screen sizes */
+.urgency-bar {
+  background: linear-gradient(90deg,var(--amber),var(--gold),var(--amber));
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+  text-align: center; padding: 9px 20px;
+  font-size: .82rem; font-weight: 600; color: var(--navy);
+  position: fixed;
+  top: 72px; /* matches nav height */
+  left: 0; right: 0; z-index: 998;
+  letter-spacing: 0.01em;
+}
+@keyframes shimmer { 0%{background-position:0% 0%} 100%{background-position:200% 0%} }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 0 5%;
+  transition: all .35s ease;
+  background: rgba(10,22,40,0.85);
+  backdrop-filter: blur(16px);
+}
+nav.scrolled {
+  background: rgba(10,22,40,0.97);
+  box-shadow: 0 4px 30px rgba(0,0,0,.3);
+}
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.35rem; font-weight: 800; color: var(--white);
+  text-decoration: none; letter-spacing: -0.01em;
+}
+.nav-logo span { color: var(--green-light); }
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a { color: rgba(255,255,255,.8); text-decoration: none; font-size: .88rem; font-weight: 500; transition: color .2s; }
+.nav-links a:hover { color: var(--green-light); }
+.nav-cta {
+  background: var(--green); color: var(--white); border: none; border-radius: 8px;
+  padding: 10px 22px; font-family: var(--font-body); font-weight: 600; font-size: .88rem;
+  cursor: pointer; transition: all .2s; text-decoration: none; white-space: nowrap;
+}
+.nav-cta:hover { background: var(--green-hover); transform: translateY(-1px); box-shadow: 0 6px 20px var(--green-glow); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; }
+.hamburger span { display: block; width: 24px; height: 2px; background: var(--white); border-radius: 2px; transition: all .3s; }
+.mobile-menu {
+  display: none; position: fixed; inset: 0; z-index: 999;
+  background: var(--navy); padding: 90px 5% 40px;
+  flex-direction: column; gap: 0;
+  overflow-y: auto;
+}
+.mobile-menu.open { display: flex; }
+.mobile-menu a {
+  color: rgba(255,255,255,.85); text-decoration: none;
+  font-size: 1.05rem; font-weight: 500;
+  border-bottom: 1px solid var(--glass-border);
+  padding: 18px 0; transition: color .2s;
+}
+.mobile-menu a:hover { color: var(--green-light); }
+.mobile-menu-cta { margin-top: 20px; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  background: var(--navy);
+  position: relative; overflow: hidden;
+  display: flex; align-items: center;
+  /* fixed: enough top padding to clear nav + urgency bar */
+  padding: 180px 5% 80px;
+}
+.hero-particles { position: absolute; inset: 0; pointer-events: none; }
+.particle {
+  position: absolute; border-radius: 50%;
+  background: radial-gradient(circle, rgba(22,163,74,.2), transparent);
+  animation: float linear infinite;
+}
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(0deg); opacity: .5; }
+  50% { transform: translateY(-40px) rotate(180deg); opacity: 1; }
+}
+.hero-grid-bg {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+                    linear-gradient(90deg,rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-glow {
+  position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none;
+}
+.glow-1 { width: 500px; height: 500px; background: rgba(22,163,74,.12); top: -100px; right: -100px; }
+.glow-2 { width: 400px; height: 400px; background: rgba(26,58,107,.4); bottom: -50px; left: -50px; }
+
+.hero-content { position: relative; z-index: 2; max-width: 680px; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--glass); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px); border-radius: 99px;
+  padding: 8px 18px; margin-bottom: 28px;
+  font-size: .82rem; color: var(--green-light); font-weight: 600;
+  animation: fadeUp .8s ease both; letter-spacing: 0.02em;
+}
+.badge-dot { width: 8px; height: 8px; background: var(--green-light); border-radius: 50%; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  font-weight: 800; line-height: 1.18; color: var(--white);
+  animation: fadeUp .8s .1s ease both;
+  letter-spacing: -0.02em;
+}
+.hero h1 em { color: var(--green-light); font-style: italic; }
+.hero p {
+  font-size: 1.05rem; color: rgba(255,255,255,.68); margin: 22px 0 36px;
+  line-height: 1.75; animation: fadeUp .8s .2s ease both; max-width: 540px;
+  font-weight: 400;
+}
+.hero-btns { display: flex; flex-wrap: wrap; gap: 14px; animation: fadeUp .8s .3s ease both; }
+
+.btn-primary {
+  background: var(--green);
+  color: var(--white); border: none; border-radius: 10px;
+  padding: 14px 28px; font-family: var(--font-body); font-weight: 700;
+  font-size: .97rem; cursor: pointer; transition: all .25s;
+  box-shadow: 0 8px 28px var(--green-glow); text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-primary:hover { background: var(--green-hover); transform: translateY(-2px); box-shadow: 0 14px 36px var(--green-glow); }
+
+.btn-secondary {
+  background: transparent; color: var(--white);
+  border: 1.5px solid rgba(255,255,255,.3); border-radius: 10px;
+  padding: 14px 28px; font-family: var(--font-body); font-weight: 600;
+  font-size: .97rem; cursor: pointer; transition: all .25s; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-secondary:hover { border-color: var(--white); background: rgba(255,255,255,.08); }
+
+.hero-trust { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 44px; animation: fadeUp .8s .4s ease both; }
+.trust-badge {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--glass); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px); border-radius: 10px;
+  padding: 9px 14px; color: rgba(255,255,255,.85);
+  font-size: .8rem; font-weight: 500;
+}
+.trust-icon { font-size: 1rem; }
+
+.hero-visual {
+  position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+  width: min(500px, 42vw); animation: fadeRight .9s .3s ease both;
+  display: flex; align-items: center; justify-content: center;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeRight { from{opacity:0;transform:translate(40px,-50%)} to{opacity:1;transform:translate(0,-50%)} }
+
+.hero-stats-card {
+  background: var(--glass); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px); border-radius: 20px; padding: 32px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+}
+.stat-item { text-align: center; }
+.stat-num { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--white); }
+.stat-num span { color: var(--green-light); }
+.stat-label { font-size: .76rem; color: rgba(255,255,255,.55); margin-top: 6px; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; }
+
+/* ── SECTION COMMON ── */
+section { padding: 90px 5%; }
+.section-tag {
+  display: inline-block; background: rgba(22,163,74,.1);
+  color: var(--green); font-weight: 700; font-size: .75rem; letter-spacing: .12em;
+  text-transform: uppercase; border-radius: 99px; padding: 6px 16px; margin-bottom: 16px;
+  border: 1px solid rgba(22,163,74,.2);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+  font-weight: 800; line-height: 1.2; color: var(--navy); margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+.section-title em { color: var(--green); font-style: italic; }
+.section-sub { font-size: 1rem; color: var(--text-mid); max-width: 600px; line-height: 1.75; font-weight: 400; }
+.text-center { text-align: center; }
+.text-center .section-sub { margin: 0 auto; }
+
+/* ── FORM SECTION ── */
+.form-section {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 50%, #0a2040 100%);
+  position: relative; overflow: hidden;
+}
+.form-section::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(22,163,74,.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.form-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; position: relative; z-index: 1; }
+.form-promo .section-title { color: var(--white); }
+.form-promo .section-sub { color: rgba(255,255,255,.65); }
+.form-promo-points { margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+.promo-point { display: flex; align-items: flex-start; gap: 14px; }
+.promo-check {
+  width: 24px; height: 24px; background: rgba(22,163,74,.2);
+  border: 1px solid rgba(22,163,74,.4); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; font-size: .8rem; margin-top: 2px; color: var(--green-light);
+}
+.promo-text strong { display: block; color: var(--white); font-size: .95rem; font-weight: 600; }
+.promo-text span { color: rgba(255,255,255,.55); font-size: .85rem; }
+
+.enquiry-form {
+  background: var(--white); border-radius: 24px;
+  padding: 40px; box-shadow: 0 40px 100px rgba(0,0,0,.35);
+}
+.form-header { margin-bottom: 28px; }
+.form-header h3 {
+  font-family: var(--font-display);
+  font-size: 1.45rem; font-weight: 800; color: var(--navy);
+  letter-spacing: -0.01em;
+}
+.form-header p { color: var(--text-mid); font-size: .88rem; margin-top: 6px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group.full { grid-column: 1/-1; }
+.form-group label { font-size: .78rem; font-weight: 700; color: var(--text-mid); text-transform: uppercase; letter-spacing: .07em; }
+.form-group input, .form-group select, .form-group textarea {
+  border: 1.5px solid var(--gray-light); border-radius: 10px;
+  padding: 12px 14px; font-family: var(--font-body); font-size: .93rem;
+  color: var(--text-dark); background: var(--off-white);
+  transition: all .2s; outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--green); background: var(--white); box-shadow: 0 0 0 3px rgba(22,163,74,.1);
+}
+.form-group textarea { resize: vertical; min-height: 80px; }
+.form-submit {
+  width: 100%; margin-top: 20px;
+  background: var(--green);
+  color: var(--white); border: none; border-radius: 12px;
+  padding: 16px; font-family: var(--font-body); font-weight: 700; font-size: 1rem;
+  cursor: pointer; transition: all .25s;
+  box-shadow: 0 8px 28px var(--green-glow);
+}
+.form-submit:hover { background: var(--green-hover); transform: translateY(-2px); box-shadow: 0 14px 36px var(--green-glow); }
+.form-note { text-align: center; margin-top: 12px; font-size: .76rem; color: var(--text-mid); }
+
+/* ── SUCCESS POPUP ── */
+.popup-overlay {
+  display: none; position: fixed; inset: 0; z-index: 9000;
+  background: rgba(0,0,0,.7); backdrop-filter: blur(6px);
+  align-items: center; justify-content: center;
+}
+.popup-overlay.show { display: flex; }
+.popup-box {
+  background: var(--white); border-radius: 24px; padding: 48px 40px;
+  text-align: center; max-width: 420px; width: 90%;
+  animation: popIn .4s cubic-bezier(.175,.885,.32,1.275);
+}
+@keyframes popIn { from{opacity:0;transform:scale(.8)} to{opacity:1;transform:scale(1)} }
+.popup-icon { font-size: 3.5rem; margin-bottom: 16px; }
+.popup-box h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem; font-weight: 800; color: var(--navy); margin-bottom: 10px;
+}
+.popup-box p { color: var(--text-mid); line-height: 1.65; margin-bottom: 28px; font-size: .95rem; }
+.popup-wa {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  background: #25d366; color: var(--white); text-decoration: none;
+  border-radius: 12px; padding: 14px 28px; font-weight: 700; font-size: 1rem;
+  transition: all .2s; margin-bottom: 12px;
+}
+.popup-wa:hover { background: #20bd5a; transform: translateY(-1px); }
+.popup-close { background: none; border: 1px solid var(--gray-light); border-radius: 8px; padding: 10px 20px; cursor: pointer; color: var(--text-mid); font-size: .9rem; transition: all .2s; }
+.popup-close:hover { border-color: var(--navy); color: var(--navy); }
+
+/* ── WHY CHOOSE US ── */
+.why-section { background: var(--off-white); }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 52px; }
+.feature-card {
+  background: var(--white); border-radius: 18px; padding: 30px 26px;
+  box-shadow: 0 2px 16px rgba(0,0,0,.05);
+  border: 1px solid transparent; transition: all .3s;
+  position: relative; overflow: hidden;
+}
+.feature-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg,rgba(22,163,74,.04),transparent);
+  opacity: 0; transition: opacity .3s;
+}
+.feature-card:hover { transform: translateY(-5px); box-shadow: 0 18px 50px rgba(0,0,0,.1); border-color: rgba(22,163,74,.2); }
+.feature-card:hover::before { opacity: 1; }
+.feature-icon { width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 18px; }
+.feature-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 10px;
+}
+.feature-card p { font-size: .87rem; color: var(--text-mid); line-height: 1.65; }
+
+/* ── COURSES ── */
+.courses-section { background: var(--white); }
+.courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin-top: 52px; }
+.course-card {
+  border-radius: 20px; overflow: hidden;
+  border: 1px solid var(--gray-light);
+  transition: all .3s; position: relative;
+}
+.course-card:hover { transform: translateY(-7px); box-shadow: 0 24px 60px rgba(0,0,0,.12); border-color: var(--green); }
+.course-header { padding: 28px 28px 20px; }
+.course-badge {
+  display: inline-block; background: rgba(22,163,74,.12); color: var(--green);
+  font-size: .73rem; font-weight: 700; border-radius: 6px; padding: 4px 10px; margin-bottom: 14px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.course-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem; font-weight: 800; color: var(--navy); margin-bottom: 8px;
+}
+.course-card .class-range { font-size: .85rem; color: var(--text-mid); font-weight: 500; }
+.course-body { padding: 0 28px 28px; }
+.course-subjects { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
+.subject-tag { background: var(--off-white); color: var(--text-mid); font-size: .77rem; font-weight: 500; border-radius: 6px; padding: 4px 10px; border: 1px solid var(--gray-light); }
+.course-features { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+.course-features li { display: flex; align-items: center; gap: 8px; font-size: .87rem; color: var(--text-mid); }
+.course-features li::before { content:'✓'; color: var(--green); font-weight: 700; }
+.course-cta {
+  width: 100%; background: var(--navy); color: var(--white); border: none;
+  border-radius: 10px; padding: 13px; font-family: var(--font-body);
+  font-weight: 600; font-size: .93rem; cursor: pointer; transition: all .2s;
+}
+.course-cta:hover { background: var(--green); }
+
+.course-card:nth-child(1) .course-header { background: linear-gradient(135deg,#e0f2fe,#bae6fd); }
+.course-card:nth-child(2) .course-header { background: linear-gradient(135deg,#dcfce7,#bbf7d0); }
+.course-card:nth-child(3) .course-header { background: linear-gradient(135deg,#fef3c7,#fde68a); }
+.course-card:nth-child(4) .course-header { background: linear-gradient(135deg,#fce7f3,#fbcfe8); }
+
+/* ── STATS / RESULTS ── */
+.stats-section {
+  background: linear-gradient(135deg,var(--navy),var(--navy-mid));
+  color: var(--white); position: relative; overflow: hidden;
+}
+.stats-section::before {
+  content:''; position:absolute; inset:0;
+  background: radial-gradient(ellipse at 30% 50%,rgba(22,163,74,.1),transparent 60%),
+              radial-gradient(ellipse at 70% 50%,rgba(251,191,36,.06),transparent 60%);
+}
+.stats-inner { position: relative; z-index: 1; }
+.stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 28px; margin-bottom: 80px; }
+.stat-box {
+  text-align: center; padding: 36px 20px;
+  background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: 20px; backdrop-filter: blur(10px);
+}
+.counter {
+  font-family: var(--font-display);
+  font-size: 2.8rem; font-weight: 900; color: var(--white);
+}
+.counter-plus { color: var(--green-light); }
+.stat-box p { color: rgba(255,255,255,.6); margin-top: 10px; font-size: .88rem; font-weight: 500; }
+
+/* Testimonials */
+.testimonials-title {
+  font-family: var(--font-display);
+  font-size: 1.75rem; font-weight: 800; color: var(--white); margin-bottom: 32px;
+  letter-spacing: -0.01em;
+}
+.testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 24px; }
+.testi-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: 18px; padding: 28px; backdrop-filter: blur(10px); }
+.testi-stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+.testi-text { color: rgba(255,255,255,.78); font-size: .92rem; line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; font-weight: 700; color: var(--white); font-family: var(--font-display); }
+.testi-name { font-weight: 600; color: var(--white); font-size: .9rem; }
+.testi-role { font-size: .76rem; color: rgba(255,255,255,.45); margin-top: 2px; }
+
+/* ── FACULTY ── */
+.faculty-section { background: var(--off-white); }
+.faculty-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 28px; margin-top: 52px; }
+.faculty-card { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,.06); transition: all .3s; }
+.faculty-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,.12); }
+.faculty-avatar { height: 110px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; }
+.faculty-info { padding: 20px; }
+.faculty-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem; font-weight: 700; color: var(--navy); margin-bottom: 6px;
+}
+.faculty-subject {
+  display: inline-block; background: rgba(22,163,74,.1); color: var(--green);
+  font-size: .72rem; font-weight: 700; border-radius: 6px; padding: 3px 10px; margin-bottom: 10px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.faculty-meta { font-size: .81rem; color: var(--text-mid); display: flex; flex-direction: column; gap: 5px; }
+
+/* ── GALLERY ── */
+.gallery-section { background: var(--white); }
+.gallery-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 52px; }
+.gallery-item {
+  border-radius: 14px; overflow: hidden; position: relative; cursor: pointer;
+  aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center;
+  font-size: 2.5rem; transition: transform .3s;
+}
+.gallery-item:hover { transform: scale(1.03); }
+.gallery-item:hover .gallery-overlay { opacity: 1; }
+.gallery-item.tall { grid-row: span 2; aspect-ratio: auto; }
+.gallery-overlay {
+  position: absolute; inset: 0; background: rgba(10,22,40,.72);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity .3s; color: var(--white);
+  font-size: .88rem; font-weight: 600; letter-spacing: 0.02em;
+}
+
+/* ── PROCESS ── */
+.process-section { background: var(--off-white); }
+.process-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 32px; margin-top: 52px; position: relative; }
+.process-steps::before {
+  content:''; position:absolute; top: 40px; left:10%; right:10%; height: 2px;
+  background: linear-gradient(90deg,var(--green),var(--green-light)); z-index: 0;
+}
+.step-card { text-align: center; position: relative; z-index: 1; }
+.step-num {
+  width: 80px; height: 80px; border-radius: 50%; background: var(--white);
+  border: 3px solid var(--green); display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-size: 1.4rem; font-weight: 800; color: var(--green);
+  margin: 0 auto 20px; box-shadow: 0 8px 24px rgba(22,163,74,.2);
+}
+.step-card h3 {
+  font-family: var(--font-display);
+  font-size: .98rem; font-weight: 700; color: var(--navy); margin-bottom: 8px;
+}
+.step-card p { font-size: .84rem; color: var(--text-mid); line-height: 1.55; }
+
+/* ── FAQ ── */
+.faq-section { background: var(--white); }
+.faq-list { max-width: 760px; margin: 52px auto 0; display: flex; flex-direction: column; gap: 12px; }
+.faq-item { border: 1.5px solid var(--gray-light); border-radius: 14px; overflow: hidden; transition: all .3s; }
+.faq-item.open { border-color: var(--green); box-shadow: 0 4px 20px rgba(22,163,74,.1); }
+.faq-q { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 24px; cursor: pointer; font-weight: 600; color: var(--navy); font-size: .95rem; }
+.faq-arrow { width: 28px; height: 28px; border-radius: 50%; background: var(--off-white); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: .75rem; transition: all .3s; }
+.faq-item.open .faq-arrow { background: var(--green); color: var(--white); transform: rotate(180deg); }
+.faq-a { display: none; padding: 0 24px 20px; color: var(--text-mid); font-size: .9rem; line-height: 1.7; }
+.faq-item.open .faq-a { display: block; }
+
+/* ── FINAL CTA ── */
+.final-cta {
+  background: linear-gradient(135deg,var(--navy),#0d2545 50%,#0a1e38);
+  position: relative; overflow: hidden; text-align: center;
+  border-top: 1px solid rgba(22,163,74,.2);
+}
+.final-cta::before {
+  content:''; position:absolute; inset:0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(22,163,74,.12), transparent 70%);
+}
+.final-cta-inner { position: relative; z-index: 1; }
+.final-cta h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem,3.5vw,2.8rem); font-weight: 800; color: var(--white);
+  margin-bottom: 16px; line-height: 1.2; letter-spacing: -0.02em;
+}
+.final-cta p { color: rgba(255,255,255,.75); font-size: 1.05rem; margin-bottom: 40px; }
+.final-cta-btns { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+.btn-white {
+  background: var(--green); color: var(--white); border: none; border-radius: 10px;
+  padding: 14px 28px; font-family: var(--font-body); font-weight: 700; font-size: .97rem;
+  cursor: pointer; transition: all .25s; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+  box-shadow: 0 8px 28px var(--green-glow);
+}
+.btn-white:hover { background: var(--green-hover); transform: translateY(-2px); }
+.btn-outline-white {
+  background: transparent; color: var(--white);
+  border: 2px solid rgba(255,255,255,.35); border-radius: 10px;
+  padding: 14px 28px; font-family: var(--font-body); font-weight: 600; font-size: .97rem;
+  cursor: pointer; transition: all .25s; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-outline-white:hover { border-color: var(--white); background: rgba(255,255,255,.1); }
+
+/* ── FOOTER ── */
+footer { background: var(--navy); color: rgba(255,255,255,.75); padding: 70px 5% 30px; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 48px; margin-bottom: 48px; }
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 1.45rem; font-weight: 800; color: var(--white); margin-bottom: 14px;
+  letter-spacing: -0.01em;
+}
+.footer-logo span { color: var(--green-light); }
+.footer-about { font-size: .87rem; line-height: 1.72; color: rgba(255,255,255,.55); margin-bottom: 20px; }
+.footer-social { display: flex; gap: 10px; }
+.social-btn {
+  width: 38px; height: 38px; background: var(--glass); border: 1px solid var(--glass-border);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  text-decoration: none; color: var(--white); font-size: .88rem; transition: all .2s;
+}
+.social-btn:hover { background: var(--green); border-color: var(--green); }
+.footer-col h4 {
+  font-family: var(--font-display);
+  font-size: .95rem; font-weight: 700; color: var(--white); margin-bottom: 18px;
+}
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { color: rgba(255,255,255,.55); text-decoration: none; font-size: .86rem; transition: color .2s; }
+.footer-links a:hover { color: var(--green-light); }
+.footer-contact-item { display: flex; gap: 10px; margin-bottom: 14px; font-size: .86rem; }
+.footer-contact-item .icon { color: var(--green-light); font-size: 1rem; margin-top: 2px; flex-shrink: 0; }
+.map-embed { border-radius: 12px; overflow: hidden; margin-top: 16px; }
+.footer-bottom {
+  border-top: 1px solid var(--glass-border); padding-top: 28px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px; font-size: .8rem; color: rgba(255,255,255,.35);
+}
+
+/* ── FLOATING BUTTONS ── */
+.floating-wa {
+  position: fixed; bottom: 24px; right: 24px; z-index: 900;
+  width: 56px; height: 56px; background: #25d366; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 28px rgba(37,211,102,.45); cursor: pointer;
+  text-decoration: none; font-size: 1.5rem;
+  animation: bounce 2.5s ease infinite;
+  transition: transform .2s;
+}
+.floating-wa:hover { transform: scale(1.1); animation: none; }
+@keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+.sticky-mobile-cta {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 800;
+  padding: 12px 14px; background: var(--navy);
+  box-shadow: 0 -4px 20px rgba(0,0,0,.3);
+  gap: 10px; border-top: 1px solid rgba(255,255,255,.08);
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ── DARK MODE ── */
+body.dark { background: #0f172a; color: var(--gray-light); }
+body.dark .why-section { background: #1e293b; }
+body.dark .courses-section { background: #0f172a; }
+body.dark .feature-card, body.dark .course-card, body.dark .faculty-card { background: #1e293b; border-color: #334155; }
+body.dark .section-title, body.dark .faculty-info h3, body.dark .step-card h3, body.dark .faq-q { color: var(--white); }
+body.dark .faq-item { border-color: #334155; }
+body.dark .process-section { background: #1a2744; }
+body.dark footer { background: #020617; }
+body.dark .faq-section, body.dark .gallery-section { background: #0f172a; }
+
+/* ── THEME TOGGLE ── */
+.theme-toggle {
+  position: fixed; top: 90px; right: 16px; z-index: 990;
+  background: var(--glass); border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px); border-radius: 99px;
+  padding: 8px 14px; font-size: .78rem; cursor: pointer; color: var(--white);
+  transition: all .2s; font-family: var(--font-body);
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — mobile-first fixes
+   ═══════════════════════════════════════════════════ */
+
+/* Tablet */
+@media(max-width:1024px) {
+  .stats-grid { grid-template-columns: repeat(2,1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-visual { display: none; }
+  .hero-content { max-width: 100%; }
+  .process-steps { grid-template-columns: repeat(2,1fr); }
+  .process-steps::before { display: none; }
+}
+
+/* Mobile */
+@media(max-width:768px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+
+  /* Urgency bar & nav stacking fix */
+  .urgency-bar {
+    position: fixed;
+    top: 72px;       /* exactly below 72px nav — consistent on mobile too */
+    font-size: .74rem;
+    padding: 8px 14px;
+    line-height: 1.4;
+  }
+  nav { top: 0; }   /* nav stays at very top */
+  /* Hero clears both nav (72px) + urgency bar (~38px) + small gap */
+  .hero { padding-top: 160px; padding-bottom: 60px; }
+
+  /* Headings scale down more aggressively on mobile */
+  .hero h1 { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+  .section-title { font-size: clamp(1.4rem, 6vw, 1.9rem); }
+  .final-cta h2 { font-size: clamp(1.4rem, 6vw, 1.9rem); }
+  .counter { font-size: 2.2rem; }
+  .testimonials-title { font-size: 1.4rem; }
+
+  .form-layout { grid-template-columns: 1fr; gap: 36px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: 1; }
+  .enquiry-form { padding: 28px 20px; }
+
+  .gallery-grid { grid-template-columns: repeat(2,1fr); }
+  .gallery-item.tall { grid-row: span 1; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  .stats-grid { grid-template-columns: repeat(2,1fr); gap: 16px; }
+  .stat-box { padding: 24px 14px; }
+
+  .sticky-mobile-cta { display: flex; }
+  .floating-wa { bottom: 82px; }
+
+  .process-steps { grid-template-columns: 1fr; gap: 24px; }
+  section { padding: 60px 5%; }
+  .courses-grid { grid-template-columns: 1fr; }
+
+  .features-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .feature-card { padding: 22px 18px; }
+
+  .theme-toggle { top: 80px; }
+}
+
+/* Small mobile */
+@media(max-width:480px) {
+  .hero-btns { flex-direction: column; }
+  .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
+  .hero-trust { flex-direction: column; gap: 8px; }
+
+  .gallery-grid { grid-template-columns: 1fr; }
+  .final-cta-btns { flex-direction: column; align-items: center; }
+
+  .features-grid { grid-template-columns: 1fr; }
+  .hero-badge { font-size: .76rem; padding: 7px 14px; }
+  .hero p { font-size: .95rem; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+  .faculty-grid { grid-template-columns: 1fr 1fr; }
+
+  .form-header h3 { font-size: 1.2rem; }
+  .urgency-bar { font-size: .7rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-logo">Bright<span>Mind</span> Academy</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- THEME TOGGLE -->
+<button class="theme-toggle" onclick="toggleTheme()">🌙 Dark</button>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/919876543210?text=Hi%20BrightMind%20Academy!%20I%20want%20to%20enquire%20about%20coaching%20classes." class="floating-wa" target="_blank" title="Chat on WhatsApp">💬</a>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-mobile-cta">
+  <a href="#enquiry" class="btn-primary" style="flex:1;justify-content:center;font-size:.88rem;padding:11px 8px;">📝 Free Demo</a>
+  <a href="tel:+919876543210" class="btn-secondary" style="flex:1;justify-content:center;font-size:.88rem;padding:11px 8px;">📞 Call Now</a>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="closeMobile()">🏠 Home</a>
+  <a href="#courses" onclick="closeMobile()">📚 Courses</a>
+  <a href="#why-us" onclick="closeMobile()">⭐ Why Us</a>
+  <a href="#faculty" onclick="closeMobile()">👨‍🏫 Faculty</a>
+  <a href="#faq" onclick="closeMobile()">❓ FAQ</a>
+  <a href="#enquiry" onclick="closeMobile()" class="btn-primary mobile-menu-cta" style="text-align:center;justify-content:center;">📝 Book Free Demo</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Bright<span>Mind</span> Academy</a>
+    <ul class="nav-links">
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#faculty">Faculty</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#enquiry" class="nav-cta">📝 Book Free Demo</a>
+    <button class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- URGENCY BANNER — always below nav -->
+<div class="urgency-bar">
+  🔥 Limited Seats for 2025–26 Batch! &nbsp;|&nbsp; New Batch Starting Soon — Book Your Free Demo! &nbsp;|&nbsp; 📞 +91-9876543210
+</div>
+
+<!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Indore's Most Trusted Offline Coaching
+    </div>
+    <h1>Offline Coaching That<br>Builds <em>Top Rankers</em></h1>
+    <p>Expert teaching for CBSE &amp; MP Board students from Class 1–12. Small batches, experienced faculty, and guaranteed academic excellence — right in your neighbourhood.</p>
+    <div class="hero-btns">
+      <a href="#enquiry" class="btn-primary">📝 Book Free Demo Class</a>
+      <a href="tel:+919876543210" class="btn-secondary">📞 Call: +91-9876543210</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-badge"><span class="trust-icon">🏆</span> Experienced Faculty</div>
+      <div class="trust-badge"><span class="trust-icon">👥</span> Small Batch Size</div>
+      <div class="trust-badge"><span class="trust-icon">🎯</span> Personal Attention</div>
+      <div class="trust-badge"><span class="trust-icon">📝</span> Weekly Tests</div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-stats-card">
+      <div class="stat-item">
+        <div class="stat-num"><span id="h-students">0</span><span>+</span></div>
+        <div class="stat-label">Students Taught</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span id="h-toppers">0</span><span>+</span></div>
+        <div class="stat-label">Board Toppers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span id="h-years">0</span></div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num"><span id="h-rate">0</span><span>%</span></div>
+        <div class="stat-label">Pass Rate</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FORM ═══════════════════════════════════ -->
+<section class="form-section" id="enquiry">
+  <div class="form-layout">
+    <div class="form-promo reveal">
+      <div class="section-tag">Free Demo Available</div>
+      <h2 class="section-title" style="color:var(--white)">Start Your Child's <em>Success Journey</em> Today</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,.65)">Fill the form and our academic counsellor will call you within 1 hour to help find the best batch for your child.</p>
+      <div class="form-promo-points">
+        <div class="promo-point">
+          <div class="promo-check">✓</div>
+          <div class="promo-text">
+            <strong>100% Free Demo Class</strong>
+            <span>Attend one full class before paying anything</span>
+          </div>
+        </div>
+        <div class="promo-point">
+          <div class="promo-check">✓</div>
+          <div class="promo-text">
+            <strong>Expert Academic Counselling</strong>
+            <span>Personalised study plan for your child</span>
+          </div>
+        </div>
+        <div class="promo-point">
+          <div class="promo-check">✓</div>
+          <div class="promo-text">
+            <strong>Flexible Batch Timings</strong>
+            <span>Morning, afternoon, and evening batches available</span>
+          </div>
+        </div>
+        <div class="promo-point">
+          <div class="promo-check">✓</div>
+          <div class="promo-text">
+            <strong>Affordable Fee Structure</strong>
+            <span>Transparent pricing with easy monthly payment options</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enquiry-form reveal" id="enquiry-form-box">
+      <div class="form-header">
+        <h3>📋 Book Your Free Demo Class</h3>
+        <p>Fill in the details — we'll call you within 60 minutes!</p>
+      </div>
+      <form id="leadForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Student Name *</label>
+            <input type="text" id="studentName" placeholder="Enter student's name" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label>Parent Name *</label>
+            <input type="text" id="parentName" placeholder="Enter parent's name" required>
+          </div>
+          <div class="form-group">
+            <label>Mobile Number *</label>
+            <input type="tel" id="mobile" placeholder="10-digit number" required pattern="[0-9]{10}" autocomplete="tel" inputmode="numeric" maxlength="10">
+          </div>
+          <div class="form-group">
+            <label>Class *</label>
+            <select id="classSelect" required>
+              <option value="">Select Class</option>
+              <option>Class 1</option><option>Class 2</option><option>Class 3</option>
+              <option>Class 4</option><option>Class 5</option><option>Class 6</option>
+              <option>Class 7</option><option>Class 8</option><option>Class 9</option>
+              <option>Class 10</option><option>Class 11</option><option>Class 12</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Board *</label>
+            <select id="board" required>
+              <option value="">Select Board</option>
+              <option>CBSE</option>
+              <option>MP Board</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Subject Interested</label>
+            <select id="subject">
+              <option value="">Select Subject</option>
+              <option>All Subjects</option>
+              <option>Mathematics</option><option>Science</option>
+              <option>Physics</option><option>Chemistry</option>
+              <option>Biology</option><option>English</option>
+              <option>Social Science</option><option>Computer Science</option>
+              <option>Commerce Subjects</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label>City / Area *</label>
+            <input type="text" id="city" placeholder="Your area or locality" required autocomplete="address-level2">
+          </div>
+          <div class="form-group full">
+            <label>Message (Optional)</label>
+            <textarea id="message" placeholder="Any specific requirement or query?"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="form-submit" id="submitBtn">
+          🚀 Submit &amp; Book Free Demo Class
+        </button>
+        <p class="form-note">🔒 Your information is 100% safe. We never share your data.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS POPUP -->
+<div class="popup-overlay" id="successPopup">
+  <div class="popup-box">
+    <div class="popup-icon">🎉</div>
+    <h3>Enquiry Received!</h3>
+    <p>Thank you! Our academic counsellor will call you within <strong>60 minutes</strong>. Meanwhile, join our WhatsApp group for study tips and updates.</p>
+    <a href="https://wa.me/919876543210?text=Hi!%20I%20just%20submitted%20an%20enquiry%20for%20BrightMind%20Academy." class="popup-wa" target="_blank">💬 Chat on WhatsApp</a>
+    <button class="popup-close" onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ WHY US ═══════════════════════════════════ -->
+<section class="why-section" id="why-us">
+  <div class="text-center reveal">
+    <div class="section-tag">Why BrightMind</div>
+    <h2 class="section-title">Everything Your Child Needs to <em>Excel</em></h2>
+    <p class="section-sub">We combine experienced teaching with structured methodology to bring out the best in every student.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(59,130,246,.1)">🧑‍🏫</div>
+      <h3>Experienced Teachers</h3>
+      <p>Our faculty has 5–20+ years of teaching experience with a proven track record of student success.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(22,163,74,.1)">🎯</div>
+      <h3>Personal Attention</h3>
+      <p>Batches of max 15 students ensure every child gets individual attention and support.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(34,197,94,.1)">❓</div>
+      <h3>Doubt Solving Sessions</h3>
+      <p>Dedicated doubt-clearing sessions after every class so no question goes unanswered.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(168,85,247,.1)">📝</div>
+      <h3>Weekly Tests &amp; Exams</h3>
+      <p>Regular practice tests modelled on CBSE &amp; MP Board patterns to keep students exam-ready.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(251,191,36,.1)">💰</div>
+      <h3>Affordable Fees</h3>
+      <p>Quality education at transparent, pocket-friendly fees with flexible monthly payment options.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(239,68,68,.1)">📊</div>
+      <h3>Parent Progress Reports</h3>
+      <p>Monthly performance reports and parent-teacher meetings keep you informed of your child's progress.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(14,165,233,.1)">🏫</div>
+      <h3>Real Classroom Experience</h3>
+      <p>Offline environment promotes focus, discipline, and peer learning — far superior to screen-based coaching.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon" style="background:rgba(236,72,153,.1)">🏆</div>
+      <h3>Exam-Focused Preparation</h3>
+      <p>Board exam-specific strategies, previous year paper practice, and model paper sessions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ COURSES ═══════════════════════════════════ -->
+<section class="courses-section" id="courses">
+  <div class="text-center reveal">
+    <div class="section-tag">Our Programs</div>
+    <h2 class="section-title">Courses for Every <em>Class &amp; Board</em></h2>
+    <p class="section-sub">Structured, syllabus-aligned coaching for CBSE and MP Board students from Class 1 to Class 12.</p>
+  </div>
+  <div class="courses-grid">
+    <div class="course-card reveal">
+      <div class="course-header">
+        <div class="course-badge">Foundation</div>
+        <h3>Primary Classes</h3>
+        <p class="class-range">Class 1 – 5</p>
+      </div>
+      <div class="course-body">
+        <div class="course-subjects">
+          <span class="subject-tag">Mathematics</span>
+          <span class="subject-tag">English</span>
+          <span class="subject-tag">EVS / Science</span>
+          <span class="subject-tag">Hindi</span>
+        </div>
+        <ul class="course-features">
+          <li>CBSE &amp; MP Board aligned</li>
+          <li>Activity-based learning</li>
+          <li>Build strong fundamentals</li>
+          <li>Small batches (10–12 students)</li>
+        </ul>
+        <button class="course-cta" onclick="scrollToForm()">📝 Enquire Now</button>
+      </div>
+    </div>
+    <div class="course-card reveal">
+      <div class="course-header">
+        <div class="course-badge">Middle School</div>
+        <h3>Junior Classes</h3>
+        <p class="class-range">Class 6 – 8</p>
+      </div>
+      <div class="course-body">
+        <div class="course-subjects">
+          <span class="subject-tag">Maths</span>
+          <span class="subject-tag">Science</span>
+          <span class="subject-tag">English</span>
+          <span class="subject-tag">Social Science</span>
+        </div>
+        <ul class="course-features">
+          <li>Concept-based teaching</li>
+          <li>Regular chapter-wise tests</li>
+          <li>Homework support</li>
+          <li>Board exam preparation start</li>
+        </ul>
+        <button class="course-cta" onclick="scrollToForm()">📝 Enquire Now</button>
+      </div>
+    </div>
+    <div class="course-card reveal">
+      <div class="course-header">
+        <div class="course-badge">Board Exam Focus</div>
+        <h3>Secondary Classes</h3>
+        <p class="class-range">Class 9 – 10</p>
+      </div>
+      <div class="course-body">
+        <div class="course-subjects">
+          <span class="subject-tag">Maths</span>
+          <span class="subject-tag">Science</span>
+          <span class="subject-tag">English</span>
+          <span class="subject-tag">S.St.</span>
+          <span class="subject-tag">Computer</span>
+        </div>
+        <ul class="course-features">
+          <li>Board exam special batches</li>
+          <li>Previous year paper practice</li>
+          <li>Doubt sessions twice a week</li>
+          <li>Grade improvement guarantee</li>
+        </ul>
+        <button class="course-cta" onclick="scrollToForm()">📝 Enquire Now</button>
+      </div>
+    </div>
+    <div class="course-card reveal">
+      <div class="course-header">
+        <div class="course-badge">Advanced</div>
+        <h3>Senior Secondary</h3>
+        <p class="class-range">Class 11 – 12</p>
+      </div>
+      <div class="course-body">
+        <div class="course-subjects">
+          <span class="subject-tag">Physics</span>
+          <span class="subject-tag">Chemistry</span>
+          <span class="subject-tag">Biology</span>
+          <span class="subject-tag">Maths</span>
+          <span class="subject-tag">Commerce</span>
+        </div>
+        <ul class="course-features">
+          <li>Science &amp; Commerce streams</li>
+          <li>PCM / PCB / Commerce batches</li>
+          <li>Board + entrance prep (JEE / NEET)</li>
+          <li>Mock tests &amp; performance tracking</li>
+        </ul>
+        <button class="course-cta" onclick="scrollToForm()">📝 Enquire Now</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ STATS & TESTIMONIALS ═══════════════════════════════════ -->
+<section class="stats-section" id="results">
+  <div class="stats-inner">
+    <div class="text-center reveal" style="margin-bottom:52px;">
+      <div class="section-tag">Our Impact</div>
+      <h2 class="section-title" style="color:var(--white)">Numbers That <em>Speak</em> for Themselves</h2>
+    </div>
+    <div class="stats-grid reveal">
+      <div class="stat-box">
+        <div class="counter"><span class="count-num" data-target="2500">0</span><span class="counter-plus">+</span></div>
+        <p>Happy Students</p>
+      </div>
+      <div class="stat-box">
+        <div class="counter"><span class="count-num" data-target="180">0</span><span class="counter-plus">+</span></div>
+        <p>Board Toppers Produced</p>
+      </div>
+      <div class="stat-box">
+        <div class="counter"><span class="count-num" data-target="12">0</span></div>
+        <p>Years of Excellence</p>
+      </div>
+      <div class="stat-box">
+        <div class="counter"><span class="count-num" data-target="98">0</span><span class="counter-plus">%</span></div>
+        <p>Student Pass Rate</p>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top:60px;">
+      <h3 class="testimonials-title">💬 What Parents &amp; Students Say</h3>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"My daughter scored 95% in Class 10 boards. The teachers at BrightMind are truly dedicated. The doubt sessions and weekly tests made all the difference. Highly recommended!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,var(--green),var(--green-light))">A</div>
+            <div>
+              <div class="testi-name">Anita Sharma</div>
+              <div class="testi-role">Parent of Class 10 Student</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"I was struggling with Physics and Chemistry in Class 12. After joining BrightMind, my concepts became crystal clear. I scored 88 in Physics — something I never imagined!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8)">R</div>
+            <div>
+              <div class="testi-name">Rahul Gupta</div>
+              <div class="testi-role">Class 12 PCM Student</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"As a working parent, I needed a trustworthy institute. BrightMind sends monthly progress reports and is always available on WhatsApp. The fees are very reasonable. My son loves going to class!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:linear-gradient(135deg,#22c55e,#16a34a)">P</div>
+            <div>
+              <div class="testi-name">Priya Mishra</div>
+              <div class="testi-role">Parent of Class 7 Student</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FACULTY ═══════════════════════════════════ -->
+<section class="faculty-section" id="faculty">
+  <div class="text-center reveal">
+    <div class="section-tag">Our Educators</div>
+    <h2 class="section-title">Meet Our <em>Expert Faculty</em></h2>
+    <p class="section-sub">Dedicated, qualified teachers who are passionate about student success.</p>
+  </div>
+  <div class="faculty-grid">
+    <div class="faculty-card reveal">
+      <div class="faculty-avatar" style="background:linear-gradient(135deg,#dbeafe,#bfdbfe)">👨‍🏫</div>
+      <div class="faculty-info">
+        <h3>Mr. Rajesh Verma</h3>
+        <span class="faculty-subject">Mathematics</span>
+        <div class="faculty-meta">
+          <span>🎓 M.Sc. Mathematics, IIT Alumni</span>
+          <span>📅 15+ Years Experience</span>
+          <span>🏫 Class 8–12 Specialist</span>
+        </div>
+      </div>
+    </div>
+    <div class="faculty-card reveal">
+      <div class="faculty-avatar" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">👩‍🏫</div>
+      <div class="faculty-info">
+        <h3>Dr. Priya Joshi</h3>
+        <span class="faculty-subject">Biology &amp; Science</span>
+        <div class="faculty-meta">
+          <span>🎓 M.Sc. Biology, PhD Scholar</span>
+          <span>📅 12+ Years Experience</span>
+          <span>🏫 Class 9–12 Specialist</span>
+        </div>
+      </div>
+    </div>
+    <div class="faculty-card reveal">
+      <div class="faculty-avatar" style="background:linear-gradient(135deg,#fef3c7,#fde68a)">👨‍🔬</div>
+      <div class="faculty-info">
+        <h3>Mr. Amit Tiwari</h3>
+        <span class="faculty-subject">Physics &amp; Chemistry</span>
+        <div class="faculty-meta">
+          <span>🎓 B.Tech (Hons), NIT Graduate</span>
+          <span>📅 10+ Years Experience</span>
+          <span>🏫 Class 11–12 Specialist</span>
+        </div>
+      </div>
+    </div>
+    <div class="faculty-card reveal">
+      <div class="faculty-avatar" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8)">👩‍💻</div>
+      <div class="faculty-info">
+        <h3>Ms. Neha Soni</h3>
+        <span class="faculty-subject">English &amp; Commerce</span>
+        <div class="faculty-meta">
+          <span>🎓 MA English, CTET Qualified</span>
+          <span>📅 8+ Years Experience</span>
+          <span>🏫 Class 6–12 Specialist</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ GALLERY ═══════════════════════════════════ -->
+<section class="gallery-section" id="gallery">
+  <div class="text-center reveal">
+    <div class="section-tag">Our Institute</div>
+    <h2 class="section-title">Life at <em>BrightMind</em></h2>
+    <p class="section-sub">A glimpse into our classrooms, events, and student activities.</p>
+  </div>
+  <div class="gallery-grid reveal" style="margin-top:52px;">
+    <div class="gallery-item tall" style="background:linear-gradient(135deg,#0a1628,#1a3a6b);">
+      📚<div class="gallery-overlay">Modern Classroom</div>
+    </div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#1e3a5f,#2563eb);">
+      🔬<div class="gallery-overlay">Science Lab</div>
+    </div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#166534,#16a34a);">
+      🏆<div class="gallery-overlay">Annual Prize Day</div>
+    </div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#14532d,#22c55e);">
+      📝<div class="gallery-overlay">Exam Practice Session</div>
+    </div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#a855f7,#7c3aed);">
+      🎉<div class="gallery-overlay">Result Celebration</div>
+    </div>
+    <div class="gallery-item" style="background:linear-gradient(135deg,#1e3a5f,#0369a1);">
+      👥<div class="gallery-overlay">Group Study Activity</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ PROCESS ═══════════════════════════════════ -->
+<section class="process-section" id="admission">
+  <div class="text-center reveal">
+    <div class="section-tag">Admission Process</div>
+    <h2 class="section-title">Getting Started is <em>Simple</em></h2>
+    <p class="section-sub">Join BrightMind Academy in just 4 easy steps.</p>
+  </div>
+  <div class="process-steps">
+    <div class="step-card reveal">
+      <div class="step-num">01</div>
+      <h3>Fill Enquiry Form</h3>
+      <p>Submit your details through our online form or call us directly.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">02</div>
+      <h3>Counselling Call</h3>
+      <p>Our academic counsellor calls within 60 mins to guide you.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">03</div>
+      <h3>Attend Free Demo</h3>
+      <p>Experience a full class for free — no payment required.</p>
+    </div>
+    <div class="step-card reveal">
+      <div class="step-num">04</div>
+      <h3>Start Classes</h3>
+      <p>Enrol, choose your batch, and begin your success journey!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FAQ ═══════════════════════════════════ -->
+<section class="faq-section" id="faq">
+  <div class="text-center reveal">
+    <div class="section-tag">Got Questions?</div>
+    <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+  </div>
+  <div class="faq-list reveal">
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What is the fee structure at BrightMind Academy?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">Our fees are very reasonable and competitive. They vary by class (1–5, 6–8, 9–10, 11–12) and subject combination. Contact us at +91-9876543210 for the exact fee chart. We also offer instalment payment options for your convenience.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What are the batch timings?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">We offer multiple batches — Morning (7 AM – 10 AM), Afternoon (1 PM – 4 PM), and Evening (5 PM – 8 PM) — so you can choose what works best for your school schedule.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Do you offer free demo classes?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">Yes! Every new student gets a free demo class before enrolment. This helps you and your child experience our teaching style, environment, and faculty before making any commitment.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Which boards do you cover — CBSE or MP Board?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">We cover both CBSE and MP Board curricula for Class 1 to Class 12. Our faculty is trained in both syllabi and we use board-specific study materials and exam strategies.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What subjects are available for coaching?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">We offer coaching in Mathematics, Science, Physics, Chemistry, Biology, English, Social Science, Computer Science, and Commerce subjects (Accountancy, Business Studies, Economics). All subjects are available for both CBSE and MP Board.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Where is the institute located?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">BrightMind Academy is located at 123, Near City Center Mall, Indore, Madhya Pradesh – 462001. We are easily accessible by public transport and have parking available nearby.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How small are the batches?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">We maintain a strict cap of 12–15 students per batch to ensure personal attention for every student. We believe small batch sizes are the key to genuine academic improvement.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How do you keep parents updated about their child's progress?<div class="faq-arrow">▼</div></div>
+      <div class="faq-a">We share monthly progress reports, weekly test scores, and conduct Parent-Teacher Meetings every quarter. You can also reach your child's teacher directly on WhatsApp for any concern.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FINAL CTA ═══════════════════════════════════ -->
+<section class="final-cta">
+  <div class="final-cta-inner reveal">
+    <h2>Give Your Child the Right Guidance<br>for Academic Success</h2>
+    <p>Join 2,500+ students who have transformed their academic performance with BrightMind Academy.</p>
+    <div class="final-cta-btns">
+      <a href="#enquiry" class="btn-white">📝 Book Free Demo Class</a>
+      <a href="tel:+919876543210" class="btn-outline-white">📞 Call Now</a>
+      <a href="https://wa.me/919876543210" class="btn-outline-white" target="_blank">💬 WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Bright<span>Mind</span> Academy</div>
+      <p class="footer-about">Indore's most trusted offline coaching institute for CBSE &amp; MP Board students from Class 1–12. Quality education, experienced faculty, and proven results since 2013.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" title="Facebook">f</a>
+        <a href="#" class="social-btn" title="Instagram">📸</a>
+        <a href="#" class="social-btn" title="YouTube">▶</a>
+        <a href="#" class="social-btn" title="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#why-us">Why Choose Us</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#faculty">Faculty</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#enquiry">Book Free Demo</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul class="footer-links">
+        <li><a href="#courses">Class 1–5 (Primary)</a></li>
+        <li><a href="#courses">Class 6–8 (Middle)</a></li>
+        <li><a href="#courses">Class 9–10 (Secondary)</a></li>
+        <li><a href="#courses">Class 11–12 (Sr. Secondary)</a></li>
+        <li><a href="#courses">CBSE Coaching</a></li>
+        <li><a href="#courses">MP Board Coaching</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item">
+        <span class="icon">📍</span>
+        <span>123, Near City Center Mall, Indore, Madhya Pradesh – 462001</span>
+      </div>
+      <div class="footer-contact-item">
+        <span class="icon">📞</span>
+        <a href="tel:+919876543210" style="color:inherit;text-decoration:none;">+91 98765 43210</a>
+      </div>
+      <div class="footer-contact-item">
+        <span class="icon">✉️</span>
+        <a href="mailto:info@brightmindacademy.in" style="color:inherit;text-decoration:none;">info@brightmindacademy.in</a>
+      </div>
+      <div class="footer-contact-item">
+        <span class="icon">🕐</span>
+        <span>Mon–Sat: 7:00 AM – 8:00 PM</span>
+      </div>
+      <div class="map-embed">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117099.99999!2d77.4265071!3d23.2599333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890"
+          width="100%" height="150" style="border:0;border-radius:8px;" allowfullscreen="" loading="lazy" title="BrightMind Academy Location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 BrightMind Academy. All rights reserved.</span>
+    <span>Made with ❤️ for student success in Indore</span>
+    <span>Best Coaching Classes | CBSE | MP Board | Class 1–12</span>
+  </div>
+</footer>
+
+<script>
+// ── LOADER ──
+window.addEventListener('load', () => {
+  setTimeout(() => document.getElementById('loader').classList.add('hide'), 1400);
+});
+
+// ── NAV SCROLL ──
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ── MOBILE MENU ──
+function toggleMobile() {
+  const menu = document.getElementById('mobileMenu');
+  menu.classList.toggle('open');
+  document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+}
+function closeMobile() {
+  document.getElementById('mobileMenu').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Close mobile menu on outside click
+document.addEventListener('click', e => {
+  const menu = document.getElementById('mobileMenu');
+  const hamburger = document.getElementById('hamburger');
+  if (menu.classList.contains('open') && !menu.contains(e.target) && !hamburger.contains(e.target)) {
+    closeMobile();
+  }
+});
+
+// ── HERO PARTICLES ──
+const container = document.getElementById('particles');
+for (let i = 0; i < 14; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  const size = Math.random() * 100 + 40;
+  p.style.cssText = `
+    width:${size}px;height:${size}px;
+    left:${Math.random()*100}%;top:${Math.random()*100}%;
+    animation-duration:${Math.random()*8+6}s;
+    animation-delay:-${Math.random()*8}s;
+    opacity:${Math.random()*.25+.08};
+  `;
+  container.appendChild(p);
+}
+
+// ── COUNTER ANIMATION ──
+function animateCounter(el, target, duration=2000) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) { el.textContent = target; clearInterval(timer); return; }
+    el.textContent = Math.floor(start);
+  }, 16);
+}
+
+// Hero counters (run after loader)
+const heroTargets = { 'h-students':2500, 'h-toppers':180, 'h-years':12, 'h-rate':98 };
+Object.entries(heroTargets).forEach(([id, val]) => {
+  setTimeout(() => animateCounter(document.getElementById(id), val), 1800);
+});
+
+// ── SCROLL REVEAL ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+reveals.forEach(el => observer.observe(el));
+
+// Stats counter observer
+let counted = false;
+const counterObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting && !counted) {
+      counted = true;
+      document.querySelectorAll('.count-num').forEach(el => animateCounter(el, +el.dataset.target));
+    }
+  });
+}, { threshold: 0.3 });
+document.querySelectorAll('.stat-box').forEach(el => counterObserver.observe(el));
+
+// ── FORM VALIDATION & SUBMIT ──
+document.getElementById('leadForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const required = ['studentName','parentName','mobile','classSelect','board','city'];
+  let valid = true;
+
+  required.forEach(id => {
+    const el = document.getElementById(id);
+    el.style.borderColor = '';
+    if (!el.value.trim()) {
+      el.style.borderColor = '#ef4444';
+      el.addEventListener('input', () => el.style.borderColor = '', { once: true });
+      valid = false;
+    }
+  });
+
+  const mobile = document.getElementById('mobile').value.replace(/\D/g,'');
+  if (mobile.length < 10) {
+    document.getElementById('mobile').style.borderColor = '#ef4444';
+    valid = false;
+  }
+  if (!valid) {
+    // Scroll to first error
+    const firstError = document.querySelector('[style*="border-color: rgb(239, 68, 68)"]');
+    if (firstError) firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = '⏳ Submitting...';
+  btn.disabled = true;
+
+  // Simulate API call — replace with actual endpoint / Google Sheets / Formspree
+  setTimeout(() => {
+    btn.textContent = '✅ Submitted Successfully!';
+    document.getElementById('successPopup').classList.add('show');
+    document.getElementById('leadForm').reset();
+    setTimeout(() => {
+      btn.textContent = '🚀 Submit & Book Free Demo Class';
+      btn.disabled = false;
+    }, 3000);
+  }, 1200);
+});
+
+function closePopup() {
+  document.getElementById('successPopup').classList.remove('show');
+}
+// Close popup on overlay click
+document.getElementById('successPopup').addEventListener('click', function(e) {
+  if (e.target === this) closePopup();
+});
+
+// ── FAQ ──
+function toggleFaq(el) {
+  const item = el.closest('.faq-item');
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!wasOpen) item.classList.add('open');
+}
+
+// ── SCROLL TO FORM ──
+function scrollToForm() {
+  document.getElementById('enquiry').scrollIntoView({ behavior:'smooth' });
+}
+
+// ── THEME TOGGLE ──
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  const btn = document.querySelector('.theme-toggle');
+  btn.textContent = document.body.classList.contains('dark') ? '☀️ Light' : '🌙 Dark';
+}
+
+// ── SMOOTH ANCHOR LINKS ──
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior:'smooth' }); }
+  });
+});
+</script>
+</body>
+</html>
